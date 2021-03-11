@@ -750,6 +750,15 @@ screen preferences():
 
             null height (4 * gui.pref_spacing)
 
+            frame:
+                style_prefix "pref"
+                has vbox
+
+                label _("Language")
+                textbutton "English" action Language(None)
+                textbutton "Japanese" action Language("japanese")
+            null height (4 * gui.pref_spacing)
+
             hbox:
                 style_prefix "slider"
                 box_wrap True
