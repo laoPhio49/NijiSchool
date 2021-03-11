@@ -4,6 +4,7 @@
 
 ## Directory (Folder)
 > The Folder Structure of the game code
+```
 .
 └── game
     ├── audio               # Dir for all the audios used in the game
@@ -26,3 +27,4 @@
         ├── japanese        # Dir to save all the translation for the scripted dialogues for the japanese language
         └── None            # Dir to save all the translation for the scripted dialogues for the default language (English)
     └── script.rpy          # The Main of the script
+```
