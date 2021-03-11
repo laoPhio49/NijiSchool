@@ -22,9 +22,13 @@
     ├── properties          # Dir for scripts for the game properties
         ├── char.rpy        # Script to save character's headers (define statement with name color)
         ├── effect.rpy      # Script to save the effects if needed
-        └── image.rpy       # Script to save all the images' name in code
+        ├── image.rpy       # Script to save all the images' name in code
+        └── variables.rpy   # Script to define all the variables
     ├── tl                  # Dir for languages translate files
         ├── japanese        # Dir to save all the translation for the scripted dialogues for the japanese language
         └── None            # Dir to save all the translation for the scripted dialogues for the default language (English)
     └── script.rpy          # The Main of the script
 ```
+
+## How to Delete save
+> Hover to the save file and hit delete on keyboard

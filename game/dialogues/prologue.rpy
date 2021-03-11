@@ -1,5 +1,8 @@
 label prologue:
-    "Inner Thought 1"
+    jump test
+
+label test:
+    "Inner Thought 1 [testList[2]]\nstart-[testListStr[1]]\nstart"
     play music testMusic
     scene bgTest at truecenter
     with fade
@@ -8,7 +11,8 @@ label prologue:
     with dissolve
     show imgKuzuha at right
     with dissolve
-    kanae "Dialogue 1"
+    $ testList[2] = 10
+    kanae "Dialogue 1 [testList[2]]"
     kuzuha "Dialogue 2"
     "Time for some choices"
 
