@@ -92,7 +92,7 @@ translate japanese strings:
 
     # game/screens.rpy:644
     old "{#file_time}%A, %B %d %Y, %H:%M"
-    new ""
+    new "{#file_time}%A, %B %d %Y, %H:%M"
 
     # game/screens.rpy:644
     old "empty slot"
@@ -100,19 +100,19 @@ translate japanese strings:
 
     # game/screens.rpy:661
     old "<"
-    new ""
+    new "<"
 
     # game/screens.rpy:664
     old "{#auto_page}A"
-    new ""
+    new "{#auto_page}A"
 
     # game/screens.rpy:667
     old "{#quick_page}Q"
-    new ""
+    new "{#quick_page}Q"
 
     # game/screens.rpy:673
     old ">"
-    new ""
+    new ">"
 
     # game/screens.rpy:730
     old "Display"
@@ -172,7 +172,7 @@ translate japanese strings:
 
     # game/screens.rpy:783
     old "Test"
-    new ""
+    new "Test"
 
     # game/screens.rpy:787
     old "Voice Volume"

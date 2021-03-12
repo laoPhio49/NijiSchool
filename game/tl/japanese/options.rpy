@@ -4,5 +4,5 @@ translate japanese strings:
 
     # game/options.rpy:15
     old "NijiSchool"
-    new ""
+    new "2時 学校"
 

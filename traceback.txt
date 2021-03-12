@@ -1,32 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dialogues/prologue.rpy", line 12, in script
-    kanae "Dialogue 1 [testList[2]"
-Exception: String u'Dialogue 1 [testList[2]' ends with an open format operation.
+  File "game/dialogues/prologue.rpy", line 6, in script
+    "Try out the {font=font_1_honokamarugo_1.1.ttf} honoka marugo {/font} in a sentence."
+Exception: Could not find font u'font_1_honokamarugo_1.1.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/dialogues/prologue.rpy", line 12, in script
-    kanae "Dialogue 1 [testList[2]"
+  File "game/dialogues/prologue.rpy", line 6, in script
+    "Try out the {font=font_1_honokamarugo_1.1.ttf} honoka marugo {/font} in a sentence."
   File "renpy/ast.py", line 715, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "renpy/exports.py", line 1384, in say
     who(what, *args, **kwargs)
-  File "renpy/character.py", line 1164, in __call__
-    what = what_pattern.replace("[what]", sub(what, translate=True))
-  File "renpy/character.py", line 1153, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "renpy/substitutions.py", line 270, in substitute
-    s = formatter.vformat(s, (), kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 563, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/string.py", line 572, in _vformat
-  File "renpy/substitutions.py", line 160, in parse
-    raise Exception("String {0!r} ends with an open format operation.".format(s))
-Exception: String u'Dialogue 1 [testList[2]' ends with an open format operation.
+  File "renpy/character.py", line 1179, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 851, in do_display
+    **display_args)
+  File "renpy/character.py", line 601, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3007, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3517, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2377, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 751, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1156, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/text/text.py", line 2033, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "renpy/text/text.py", line 636, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "renpy/text/text.py", line 248, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "renpy/text/font.py", line 699, in get_font
+    face = load_face(fn)
+  File "renpy/text/font.py", line 640, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font u'font_1_honokamarugo_1.1.ttf'.
 
 Windows-10-10.0.18362
 Ren'Py 7.4.2.1292
 NijiSchool 1.0
-Thu Mar 11 22:52:33 2021
+Fri Mar 12 22:05:43 2021

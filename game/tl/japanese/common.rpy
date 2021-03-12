@@ -260,7 +260,7 @@ translate japanese strings:
 
     # renpy/common/00action_file.rpy:240
     old "%b %d, %H:%M"
-    new ""
+    new "%b %d, %H:%M"
 
     # renpy/common/00action_file.rpy:353
     old "Save slot %s: [text]"
@@ -316,11 +316,11 @@ translate japanese strings:
 
     # renpy/common/00director.rpy:1481
     old "⬆"
-    new ""
+    new "⬆"
 
     # renpy/common/00director.rpy:1487
     old "⬇"
-    new ""
+    new "⬇"
 
     # renpy/common/00director.rpy:1551
     old "Done"
@@ -328,31 +328,31 @@ translate japanese strings:
 
     # renpy/common/00director.rpy:1561
     old "(statement)"
-    new ""
+    new "(statement)"
 
     # renpy/common/00director.rpy:1562
     old "(tag)"
-    new ""
+    new "(tag)"
 
     # renpy/common/00director.rpy:1563
     old "(attributes)"
-    new ""
+    new "(attributes)"
 
     # renpy/common/00director.rpy:1564
     old "(transform)"
-    new ""
+    new "(transform)"
 
     # renpy/common/00director.rpy:1589
     old "(transition)"
-    new ""
+    new "(transition)"
 
     # renpy/common/00director.rpy:1601
     old "(channel)"
-    new ""
+    new "(channel)"
 
     # renpy/common/00director.rpy:1602
     old "(filename)"
-    new ""
+    new "(filename)"
 
     # renpy/common/00director.rpy:1631
     old "Change"
