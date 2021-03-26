@@ -1,6 +1,9 @@
 # NijiSchool
- Fan Game For Kanae
-> Name might change
+> Name might change based on vote.
+
+## What is this?
+This is the repository for Visual Novel Project on 2021 which is started as one of the 3rd Debut Anniversary Projects for Kanae.\
+This game is developed using Ren'Py engine.
 
 ## Directory (Folder)
 > The Folder Structure of the game code
@@ -30,5 +33,16 @@
     └── script.rpy          # The Main of the script
 ```
 
-## How to Delete save
-> Hover to the save file and hit delete on keyboard
+## Github Direction
+***Please use Pull Request Mechanism to merge to main branch.***\
+The most suggested way to use github is to make your own one dev branch, or to use multiple branches for multiple purposes.\
+The branch name for consistency : `<devName>/<purpose>` \
+The branch name can be in any alpha-numberical case.\
+```
+Example: 
+- saifu/dev
+- saifu/setTemplate
+```
+
+## Miscellaneous Informations
+- How to delete save file = Hover to the save file and hit delete on keyboard
